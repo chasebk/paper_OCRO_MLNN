@@ -87,6 +87,8 @@
 	\newcommand{\multilinecol}[1]{%
 		\begin{tabular}{@{}c@{}}#1\end{tabular}%
 	}
+	
+	\graphicspath{{../images/pdf/}}
 %<-- GN/SD added END
 
 
@@ -407,7 +409,7 @@ Range of individual variables is set to $[-1, 1]$. The used health function as g
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=1.0\textwidth =0cm 0cm 0cm 0cm, clip]{images/pdf/system/cro_training_final.pdf}
+		\includegraphics[width=1.0\textwidth =0cm 0cm 0cm 0cm, clip]{system/cro_training_final.pdf}
 		\caption{OCRO-MLNN training process}
 		\label{fig_ocro_training}
 	\end{center}
@@ -609,20 +611,20 @@ Other NN models used for comparison include traditional MLNN and its variances w
 \begin{figure}[!ht] 
   \begin{minipage}[b]{0.48\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/data/internet_traffic_eu_5m.pdf} 
+    \includegraphics[width=0.9\linewidth]{data/internet_traffic_eu_5m.pdf} 
   \end{minipage}
   \begin{minipage}[b]{0.48\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/data/worldcup98_5m.pdf} 
+    \includegraphics[width=0.9\linewidth]{data/worldcup98_5m.pdf} 
   \end{minipage} 
   
   \begin{minipage}[b]{0.48\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/data/google_cpu_5m.pdf} 
+    \includegraphics[width=0.9\linewidth]{data/google_cpu_5m.pdf} 
   \end{minipage}%% 
   \begin{minipage}[b]{0.48\linewidth}
     \centering
-    \includegraphics[width=0.89\linewidth]{images/pdf/data/cpu_ram.pdf} 
+    \includegraphics[width=0.89\linewidth]{data/cpu_ram.pdf} 
   \end{minipage} 
   
   \caption{Dataset visualizations: univariate data (upper row) and multivariate data (lower row)} 
@@ -736,7 +738,7 @@ Table~\ref{table:uni_forecast} shows that OCRO-MLNN not only improves the origin
 			\multirow{2}{*}{Data} & \multirow{2}{*}{Model} & \multicolumn{2}{c|}{$R^2$} & \multicolumn{2}{c|}{RMSE} & \multicolumn{2}{c|}{MAE} & \multicolumn{2}{c|}{MAPE}  & \multicolumn{2}{c|}{SMAPE} \\ \cline{3-12}
    				& & $k$ = 2 & $k$ = 5 & $k$ = 2 & $k$ = 5 & $k$ = 2 & $k$ = 5 & $k$ = 2 & $k$ = 5 & $k$ = 2 & $k$ = 5 \\ [0.5ex] 
 			\hline
-			\primitiveinput{table/table_uni_forecast}
+			\primitiveinput{../table/table_uni_forecast}
 			\hline
 		\end{tabular}
 %	\end{sideways}
@@ -766,28 +768,28 @@ Table~\ref{table:uni_forecast} shows that OCRO-MLNN not only improves the origin
 \begin{figure}[!ht] 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/eu_k2_ga_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/eu_k2_ga_mlnn.pdf} 
   \end{minipage}
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/eu_k2_pso_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/eu_k2_pso_mlnn.pdf} 
   \end{minipage} 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/eu_k2_lstm.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/eu_k2_lstm.pdf} 
   \end{minipage} 
   
    \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/eu_k2_abfo_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/eu_k2_abfo_mlnn.pdf} 
   \end{minipage}
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/eu_k2_cro_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/eu_k2_cro_mlnn.pdf} 
   \end{minipage} 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/eu_k2_ocro_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/eu_k2_ocro_mlnn.pdf} 
   \end{minipage} 
   
   \caption{Comparison of OCRO-MLNN prediction with other models (sliding window $k$ = 2; EU dataset)} 
@@ -797,28 +799,28 @@ Table~\ref{table:uni_forecast} shows that OCRO-MLNN not only improves the origin
 \begin{figure}[!ht] 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/wc_k5_rnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/wc_k5_rnn.pdf} 
   \end{minipage}
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/wc_k5_lstm.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/wc_k5_lstm.pdf} 
   \end{minipage} 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/wc_k5_ga_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/wc_k5_ga_mlnn.pdf} 
   \end{minipage} 
   
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/wc_k5_abfo_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/wc_k5_abfo_mlnn.pdf} 
   \end{minipage}
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/wc_k5_cro_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/wc_k5_cro_mlnn.pdf} 
   \end{minipage} 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/wc_k5_ocro_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/wc_k5_ocro_mlnn.pdf} 
   \end{minipage} 
   \caption{Comparison of OCRO-MLNN prediction with other models (sliding window $k$ = 5; WC dataset)} 
   \label{predict_wc_sliding5} 
@@ -853,7 +855,7 @@ Table~\ref{table:uni_forecast} shows that OCRO-MLNN not only improves the origin
 			\hline
 			\multirow{2}{*}{Data} & \multirow{2}{*}{Model} & \multicolumn{3}{c|}{$k$ = 2} & \multicolumn{3}{c|}{ $k$ = 5 } \\ \cline{3-8}
    				& & $t_e$ & $t_p$ & $\boldsymbol{t_s}$ & $t_e$ & $t_p$ & $\boldsymbol{t_s}$  \\ [0.5ex] \hline
-			\primitiveinput{table/table_uni_speed}
+			\primitiveinput{../table/table_uni_speed}
 			\hline
 		\end{tabular}
 %	\end{sideways}
@@ -889,7 +891,7 @@ Fig.~\ref{fig:stability_uni} visualizes RMSE range of 15 run times average with 
 			 \cline{3-12}
 	   		& & $min$ & $max$ & $mean$ & $std$ & $cv$ &   $min$ & $max$ & $mean$ & $std$ & $cv$ \\ [0.5ex] 
 		\hline
-			\primitiveinput{table/table_uni_stability}
+			\primitiveinput{../table/table_uni_stability}
 		\hline
 		\end{tabular}
 %	\end{sideways}
@@ -950,7 +952,7 @@ These experiments presented above indicate that with multivariate data, our OCRO
 			\multirow{2}{*}{Data} & \multirow{2}{*}{Model} & \multicolumn{2}{c|}{$R^2$} & \multicolumn{2}{c|}{RMSE} & \multicolumn{2}{c|}{MAE} & \multicolumn{2}{c|}{MAPE}  & \multicolumn{2}{c|}{SMAPE} \\ \cline{3-12}
    				& & $k$ = 2 & $k$ = 5 & $k$ = 2 & $k$ = 5 & $k$ = 2 & $k$ = 5 & $k$ = 2 & $k$ = 5 & $k$ = 2 & $k$ = 5 \\ [0.5ex] 
 			\hline
-			\primitiveinput{table/table_multi_forecast}
+			\primitiveinput{../table/table_multi_forecast}
 			\hline
 		\end{tabular}
 %	\end{sideways}
@@ -970,7 +972,7 @@ These experiments presented above indicate that with multivariate data, our OCRO
 %			 \multirow{2}{*}{Data} & \multirow{2}{*}{Model} & \multicolumn{2}{c|}{$R^2$} & \multicolumn{2}{c|}{RMSE} & \multicolumn{2}{c|}{MAE} & \multicolumn{2}{c|}{MAPE}  & \multicolumn{2}{c|}{SMAPE} \\ \cline{3-12}
 %   				& & k = 2 & k = 5 & k = 2 & k = 5 & k = 2 & k = 5 & k = 2 & k = 5 & k = 2 & k = 5 \\ [0.5ex] 
 %			\hline
-%			\primitiveinput{table/table_multi_forecast}
+%			\primitiveinput{../table/table_multi_forecast}
 %			\hline
 %		\end{tabular}
 %	\end{sideways}
@@ -980,28 +982,28 @@ These experiments presented above indicate that with multivariate data, our OCRO
 \begin{figure}[!ht] 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/cpu_k2_pso_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/cpu_k2_pso_mlnn.pdf} 
   \end{minipage}
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/cpu_k2_rnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/cpu_k2_rnn.pdf} 
   \end{minipage} 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/cpu_k2_lstm.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/cpu_k2_lstm.pdf} 
   \end{minipage} 
   
     \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/cpu_k2_abfo_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/cpu_k2_abfo_mlnn.pdf} 
   \end{minipage}
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/cpu_k2_cro_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/cpu_k2_cro_mlnn.pdf} 
   \end{minipage} 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k2/cpu_k2_ocro_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k2/cpu_k2_ocro_mlnn.pdf} 
   \end{minipage} 
   
   \caption{Comparison of OCRO-MLNN prediction with other models (sliding window $k$ = 2; multivariate data (CPU)} 
@@ -1011,28 +1013,28 @@ These experiments presented above indicate that with multivariate data, our OCRO
 \begin{figure}[!ht] 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/ram_k5_ga_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/ram_k5_ga_mlnn.pdf} 
   \end{minipage}
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/ram_k5_pso_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/ram_k5_pso_mlnn.pdf} 
   \end{minipage} 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/ram_k5_lstm.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/ram_k5_lstm.pdf} 
   \end{minipage} 
   
     \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/ram_k5_abfo_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/ram_k5_abfo_mlnn.pdf} 
   \end{minipage}
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/ram_k5_cro_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/ram_k5_cro_mlnn.pdf} 
   \end{minipage} 
   \begin{minipage}[b]{0.33\linewidth}
     \centering
-    \includegraphics[width=0.9\linewidth]{images/pdf/predict/k5/ram_k5_ocro_mlnn.pdf} 
+    \includegraphics[width=0.9\linewidth]{predict/k5/ram_k5_ocro_mlnn.pdf} 
   \end{minipage} 
   
   \caption{Comparison of OCRO-MLNN prediction with other models (sliding window $k$ = 5; multivariate data (RAM)} 
@@ -1047,11 +1049,11 @@ These experiments presented above indicate that with multivariate data, our OCRO
 	\centering
 	\begin{minipage}[t]{1.0\textwidth}
 		\centering
-		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{images/pdf/time/time_eu.pdf}
+		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{time/time_eu.pdf}
 %	\end{minipage}
 %	\begin{minipage}[t]{8cm}
 		\centering
-		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{images/pdf/time/time_wc.pdf}
+		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{time/time_wc.pdf}
 	\end{minipage}
 	\caption{Runtime comparison: OCRO-MLNN (green), sliding window $k$ = 2 and $k$ = 5; univariate data: EU (left), WC (right)} 
 	\label{fig:speed_system_univariate}
@@ -1061,11 +1063,11 @@ These experiments presented above indicate that with multivariate data, our OCRO
 	\centering
 	\begin{minipage}[t]{1.0\textwidth}
 		\centering
-		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{images/pdf/time/time_cpu.pdf}
+		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{time/time_cpu.pdf}
 %	\end{minipage}
 %	\begin{minipage}[t]{8cm}
 		\centering
-		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{images/pdf/time/time_ram.pdf}
+		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{time/time_ram.pdf}
 	\end{minipage}
 	\caption{Runtime comparison: OCRO-MLNN (green), sliding window $k$ = 2 and $k$ = 5; multivariate data, CPU (left), RAM (right)} 
 	\label{fig:speed_system_multivariate}
@@ -1083,7 +1085,7 @@ These experiments presented above indicate that with multivariate data, our OCRO
 			\hline
 			\multirow{2}{*}{Data} & \multirow{2}{*}{Model} & \multicolumn{3}{c|}{$k$ = 2} & \multicolumn{3}{c|}{ $k$ = 5 } \\ \cline{3-8}
    				& & $t_e$ & $t_p$ & $\boldsymbol{t_s}$ & $t_e$ & $t_p$ & $\boldsymbol{t_s}$  \\ [0.5ex] \hline
-			\primitiveinput{table/table_multi_speed}
+			\primitiveinput{../table/table_multi_speed}
 			\hline
 		\end{tabular}
 %	\end{sideways}
@@ -1113,7 +1115,7 @@ Fig.~\ref{fig:stability_multi} expresses average RMSE after 15 run times of all 
 			 \cline{3-12}
 	   		& & $min$ & $max$ & $mean$ & $std$ & $cv$ &   $min$ & $max$ & $mean$ & $std$ & $cv$ \\ [0.5ex] 
 		\hline
-			\primitiveinput{table/table_multi_stability}
+			\primitiveinput{../table/table_multi_stability}
 		\hline
 		\end{tabular}
 %	\end{sideways}
@@ -1143,11 +1145,11 @@ Fig.~\ref{fig:stability_multi} expresses average RMSE after 15 run times of all 
 	\centering
 	\begin{minipage}[t]{1\textwidth}
 		\centering
-		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{images/pdf/stability/st_eu_2.pdf}
+		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{stability/st_eu_2.pdf}
 %	\end{minipage}
 %	\begin{minipage}[t]{8cm}
 		\centering
-		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{images/pdf/stability/st_wc_2.pdf}
+		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{stability/st_wc_2.pdf}
 	\end{minipage}
 	\caption{RMSE comparison: average of 15 times; univariate data: EU (left), WC (right)} 
 	\label{fig:stability_uni}
@@ -1157,11 +1159,11 @@ Fig.~\ref{fig:stability_multi} expresses average RMSE after 15 run times of all 
 	\centering
 	\begin{minipage}[t]{1\textwidth}
 		\centering
-		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{images/pdf/stability/st_cpu_2.pdf}
+		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8cm]{stability/st_cpu_2.pdf}
 %	\end{minipage}
 %	\begin{minipage}[t]{8cm}
 		\centering
-		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8.1cm]{images/pdf/stability/st_ram_2.pdf}
+		\includegraphics[width=0.45\textwidth =0cm 0cm 0cm 0cm, height = 8.1cm]{stability/st_ram_2.pdf}
 	\end{minipage}
 	\caption{RMSE comparison: average of 15 times; multivariate data: CPU (left), RAM (right)} 
 	\label{fig:stability_multi}

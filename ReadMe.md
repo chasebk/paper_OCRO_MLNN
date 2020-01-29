@@ -24,10 +24,19 @@ BibTex:
 # Source
 
 ```code 
-code: https://github.com/chasebk/code_ocro_mlnn
-paper: https://github.com/chasebk/paper_OCRO_MLNN
-data: https://datamarket.com/data/list/?q=cat:ecd%20provider:tsdl
-latex template: https://www.atlantis-press.com/journals/ijcis/author-guidelines
+paper's code: https://github.com/chasebk/code_ocro_mlnn
+latex's source: https://github.com/chasebk/paper_OCRO_MLNN_2019
+internet traffic data: https://datamarket.com/data/list/?q=cat:ecd%20provider:tsdl
+journal's template: https://www.atlantis-press.com/journals/ijcis/author-guidelines
+
+Check out my latest framework for benchmark function in numpy (opfunu):
+	https://github.com/thieunguyen5991/opfunu
+
+Also my latest framework for metaheuristic algorithm in python ( > 20 algorithms):
+	https://github.com/thieunguyen5991/metaheuristics
+
+All my papers and source code can be found here:
+	https://github.com/chasebk
 ```
 
 

@@ -6,15 +6,21 @@
 *.out
 *.synctex.gz
 *.spl
-*.bak
+*.tex.bak
 *.vtc
 *.bib~*
 *.toc
+*.snm
+*.nav
+*.xml
+*.run
+
+SPRINGER/List_of_CVs.pdf
+SPRINGER/paper_cro_mlnn_springer.pdf
 
 elsarticle-template.pdf
 JCSS/paper_cro_mlnn.pdf
-SPRINGER/List_of_CVs.pdf
-SPRINGER/paper_cro_mlnn_springer.pdf
+
 IJCIS/paper_cro_mlnn_IJCIS.pdf
 
 
