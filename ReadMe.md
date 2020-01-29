@@ -1,5 +1,17 @@
+# Opposition-Based Coral Reefs Optimization - Multi-layer Neural Network 
+```code 
+- How to read my repository:
 
-## Publication
+1. folders
++ SPRINGER: latex paper for springer journal 
++ IJCIS: latex paper for IJCIS (accepted)
++ ref: reference papers 
++ table and images: used in both SPRINGER and IJCIS latex source 
++ table_full: additional materials (not used)
+```
+
+
+# Publication
 Due to the policy of the journal, I'm not allowed to publicize the paper after it was accepted. So I upload the final version of my paper before accepted.
 
 If you guys interested in my paper or has any comment about it. Feel free to contact me via email: nguyenthieu2102@gmail.com
